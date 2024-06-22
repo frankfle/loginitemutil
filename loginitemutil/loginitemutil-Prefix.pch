@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'loginitemutil' target in the 'loginitemutil' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

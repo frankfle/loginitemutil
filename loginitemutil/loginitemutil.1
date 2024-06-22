@@ -1,0 +1,60 @@
+.\"Modified from man(1) of FreeBSD, the NetBSD mdoc.template, and mdoc.samples.
+.\"See Also:
+.\"man mdoc.samples for a complete listing of options
+.\"man mdoc for the short list of editing options
+.\"/usr/share/misc/mdoc.template
+.Dd 4/12/12               \" DATE 
+.Dt loginitemutil 1      \" Program name and manual section number 
+.Os Darwin
+.Sh NAME                 \" Section Header - required - don't modify 
+.Nm loginitemutil
+.\" The following lines are read in generating the apropos(man -k) database. Use only key
+.\" words here as the database is built based on the words here and in the .ND line. 
+.\" Use .Nm macro to designate other names for the documented program.
+.Nd Create a Login Item
+.Sh SYNOPSIS          \" Section Header - required - don't modify
+.Pp
+.Nm
+<options>
+.Pp
+.Pp
+.Sh DESCRIPTION       \" Section Header - required - don't modify
+This utility is used to create login items for user accounts on this machine.
+.Pp
+.Pp
+.Sh OPTIONS
+.Pp
+.Pp
+.Bl -tag -width -indent  \" Begins a tagged list 
+.It -p <path>
+Specifies the path of the item to start at login.  (eg. "/Applications/Mail.app")
+.It -u
+Specifies a user to create the login item for.  This can be specified no times to indicate only the current user, or it can be specified multiple times to indicate more than one user.
+.It -H
+Causes the login item to be hidden.  This doesn't always work in Mac OS 10.5.x, but seems to work in 10.6+.
+.It -h
+Prints the help and quits.
+.It -v
+Prints the version and quits.
+.It -V
+Turns on verbose mode.
+.It -x
+Implies -A.  Users to ignore.
+.It -A
+Indicates that this should be done for all users.  (Currently, all users is users with a UID > 500, to avoid system users.)
+.It -d
+Indicates that instead of adding the login item, any login items for the path provided should be removed (deleted).
+.It -c
+Indicates that instead of adding the login item, it should only be checked for.  Note that this only works with the current user, not any users specified with -u or all users specified with -A.
+.It -l
+Lists all the Login Items (as paths) for the current user.  Does not print any metadata about the items, and does not support any of the user options, yet.
+.El                      \" Ends the list
+.Pp
+.Pp
+.Sh	EXAMPLES
+.Pp
+.Nm
+-H -x johndoe -p /Applications/Mail.app
+.Pp
+.Nm
+-u bill -u bob -u sally -p /Applications/Utilities/Terminal.app

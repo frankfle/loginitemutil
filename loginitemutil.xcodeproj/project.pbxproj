@@ -1,0 +1,254 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A9954485153723F60099B0E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9954484153723F60099B0E5 /* Foundation.framework */; };
+		A9954488153723F60099B0E5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9954487153723F60099B0E5 /* main.m */; };
+		A995448C153723F60099B0E5 /* loginitemutil.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = A995448B153723F60099B0E5 /* loginitemutil.1 */; };
+		A995449815375A110099B0E5 /* FFLoginItemController.m in Sources */ = {isa = PBXBuildFile; fileRef = A995449715375A110099B0E5 /* FFLoginItemController.m */; };
+		A99544A0153761B90099B0E5 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A995449F153761B90099B0E5 /* CoreServices.framework */; };
+		A99544BE153CA0230099B0E5 /* OpenDirectory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A99544BD153CA0230099B0E5 /* OpenDirectory.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A995447E153723F60099B0E5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				A995448C153723F60099B0E5 /* loginitemutil.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A9954480153723F60099B0E5 /* loginitemutil */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = loginitemutil; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9954484153723F60099B0E5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A9954487153723F60099B0E5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A995448A153723F60099B0E5 /* loginitemutil-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "loginitemutil-Prefix.pch"; sourceTree = "<group>"; };
+		A995448B153723F60099B0E5 /* loginitemutil.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = loginitemutil.1; sourceTree = "<group>"; };
+		A995449615375A110099B0E5 /* FFLoginItemController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FFLoginItemController.h; path = FFLoginItemController/FFLoginItemController.h; sourceTree = SOURCE_ROOT; };
+		A995449715375A110099B0E5 /* FFLoginItemController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FFLoginItemController.m; path = FFLoginItemController/FFLoginItemController.m; sourceTree = SOURCE_ROOT; };
+		A995449F153761B90099B0E5 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		A99544BD153CA0230099B0E5 /* OpenDirectory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenDirectory.framework; path = System/Library/Frameworks/OpenDirectory.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A995447D153723F60099B0E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A99544BE153CA0230099B0E5 /* OpenDirectory.framework in Frameworks */,
+				A99544A0153761B90099B0E5 /* CoreServices.framework in Frameworks */,
+				A9954485153723F60099B0E5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A9954475153723F60099B0E5 = {
+			isa = PBXGroup;
+			children = (
+				A9954486153723F60099B0E5 /* loginitemutil */,
+				A9954483153723F60099B0E5 /* Frameworks */,
+				A9954481153723F60099B0E5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A9954481153723F60099B0E5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9954480153723F60099B0E5 /* loginitemutil */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9954483153723F60099B0E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A99544BD153CA0230099B0E5 /* OpenDirectory.framework */,
+				A995449F153761B90099B0E5 /* CoreServices.framework */,
+				A9954484153723F60099B0E5 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A9954486153723F60099B0E5 /* loginitemutil */ = {
+			isa = PBXGroup;
+			children = (
+				A995448B153723F60099B0E5 /* loginitemutil.1 */,
+				A995449615375A110099B0E5 /* FFLoginItemController.h */,
+				A995449715375A110099B0E5 /* FFLoginItemController.m */,
+				A9954487153723F60099B0E5 /* main.m */,
+				A9954489153723F60099B0E5 /* Supporting Files */,
+			);
+			path = loginitemutil;
+			sourceTree = "<group>";
+		};
+		A9954489153723F60099B0E5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A995448A153723F60099B0E5 /* loginitemutil-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A995447F153723F60099B0E5 /* loginitemutil */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A995448F153723F60099B0E5 /* Build configuration list for PBXNativeTarget "loginitemutil" */;
+			buildPhases = (
+				A995447C153723F60099B0E5 /* Sources */,
+				A995447D153723F60099B0E5 /* Frameworks */,
+				A995447E153723F60099B0E5 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = loginitemutil;
+			productName = loginitemutil;
+			productReference = A9954480153723F60099B0E5 /* loginitemutil */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9954477153723F60099B0E5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = A995447A153723F60099B0E5 /* Build configuration list for PBXProject "loginitemutil" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+			);
+			mainGroup = A9954475153723F60099B0E5;
+			productRefGroup = A9954481153723F60099B0E5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A995447F153723F60099B0E5 /* loginitemutil */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A995447C153723F60099B0E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9954488153723F60099B0E5 /* main.m in Sources */,
+				A995449815375A110099B0E5 /* FFLoginItemController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A995448D153723F60099B0E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A995448E153723F60099B0E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A9954490153723F60099B0E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "loginitemutil/loginitemutil-Prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.6.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A9954491153723F60099B0E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "loginitemutil/loginitemutil-Prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.6.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A995447A153723F60099B0E5 /* Build configuration list for PBXProject "loginitemutil" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A995448D153723F60099B0E5 /* Debug */,
+				A995448E153723F60099B0E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A995448F153723F60099B0E5 /* Build configuration list for PBXNativeTarget "loginitemutil" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9954490153723F60099B0E5 /* Debug */,
+				A9954491153723F60099B0E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A9954477153723F60099B0E5 /* Project object */;
+}
